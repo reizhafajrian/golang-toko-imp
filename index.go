@@ -19,7 +19,7 @@ type RequestBody struct {
 }
 
 func main() {
-	collection := provider.ConnectingMongo().Database("tokopedia").Collection("tokopedia")
+	collection := provider.ConnectingMongo().Database("tokopedia").Collection("toko")
 	r := gin.Default()
 	api := r.Group(apiV1)
 	api.POST(saveData, func(c *gin.Context) {
