@@ -13,9 +13,8 @@ type JsonToko struct {
 	Toko     string             `bson:"toko"`
 	Category []string           `bson:"category"`
 	Stock    int                `bson:"stock"`
+	Price    int                `bson:"price"`
 }
-
-
 
 type BsonToko struct {
 	Date     string   `json:"date"`
@@ -25,4 +24,5 @@ type BsonToko struct {
 	Toko     string   `json:"toko"`
 	Category []string `json:"category"`
 	Stock    int      `json:"stock"`
-}
+	Price		int      `json:"price"`
+} 
